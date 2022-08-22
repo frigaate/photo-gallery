@@ -1,0 +1,137 @@
+:root{
+    --color-primary: #FCAD14;
+    --color-secondary: #E80753;
+    --color-tertiary: #5850A1;
+    --background-dark: #000000cc;
+}
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var();
+    padding: 20px 20px;
+    border-bottom: 1px solid var(--background-dark);
+}
+
+.logo-container{
+    width: 100px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav ul a:hover{
+    text-decoration: none;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    color: var(--color-tertiary);
+}
+
+.category-button{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
+
+.category-button button {
+    padding: 10px 25px;
+    border: 1px solid var(--background-dark);
+    outline: none;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--color-tertiary);
+}
+
+.category-button button:hover{
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.category-button button.active{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.category-button button.active:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.gallery {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+}
+
+footer div{
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--background-dark);
+}
+
+footer h4{
+    color: var(--background-dark);
+    margin-bottom: 0px;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--background-dark);
+}
+
+footer a:hover, footer a:focus{
+    color: var(--color-tertiary);
+}
+
+.socials{
+    border-right: none;
+}
