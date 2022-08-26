@@ -113,6 +113,7 @@ nav ul a:hover{
     padding: 10px;
     /* border-radius: 20px; */
     color: var(--background-dark);
+    font-size: 20px;
 }
 
 .image-wrapper h3 {
@@ -136,11 +137,14 @@ nav ul a:hover{
     display: flex;
     width: 90%;
     justify-content: space-between;
+    font-size: 20px;
     color: var(--color-tertiary);
+    margin-top: 5px;
 }
  
 .share .fa-brands {
     color: var(--color-tertiary);
+    font-size: 20px;
 }
 
 .share .active{
@@ -152,6 +156,7 @@ nav ul a:hover{
     justify-content: flex-end;
     width: 90%;
     color: red;
+    font-size: 20px;
 }
 
 footer {
