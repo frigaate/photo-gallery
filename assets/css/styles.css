@@ -1,6 +1,6 @@
 :root{
     --color-primary: #FCAD14;
-    --color-secondary: #E80753;
+    --color-secondary: #037CBD;
     --color-tertiary: #5850A1;
     --background-dark: #000000cc;
 }
@@ -14,6 +14,7 @@
 
 img{
     width: 100%;
+    border-radius: 20px;
 }
 
 header{
@@ -37,7 +38,7 @@ nav ul{
 
 nav ul a{
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--background-dark);
     font-size: 20px;
     cursor: pointer;
 }
@@ -49,18 +50,25 @@ nav ul a:hover{
 }
 
 .container{
-    max-width: 1024px;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 20px;
+    padding: 0 20px;
     color: var(--color-tertiary);
+}
+
+.categories {
+    margin: 10px 0;
+    margin-left: 40px;
 }
 
 .category-button{
     display: flex;
     width: 400px;
     justify-content: space-between;
+    margin-top: 10px;
     /* gap: 50px; */
 }
 
@@ -90,7 +98,60 @@ nav ul a:hover{
 }
 
 .gallery {
-    display: none;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px 1%;
+}
+
+.image-wrapper{
+    flex: 0 0 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10px;
+    /* border-radius: 20px; */
+    color: var(--background-dark);
+}
+
+.image-wrapper h3 {
+    color: var(--color-primary);
+    font-size: 18px;
+}
+
+.image-wrapper p {
+    width: 90%;
+}
+
+.image-wrapper ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.image-wrapper .share{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    color: var(--color-tertiary);
+}
+ 
+.share .fa-brands {
+    color: var(--color-tertiary);
+}
+
+.share .active{
+    color: var(--color-primary);
+}
+
+.image-wrapper .heart_button{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    color: red;
 }
 
 footer {
@@ -107,6 +168,7 @@ footer div{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 10px;
     border-right: 1px solid var(--background-dark);
 }
 
